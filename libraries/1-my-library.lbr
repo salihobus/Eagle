@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.1">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -52,7 +52,7 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
@@ -152,6 +152,23 @@
 <wire x1="0.575" y1="-1.5" x2="-0.575" y2="-1.5" width="0.2" layer="21"/>
 <wire x1="-0.575" y1="-1.5" x2="-0.575" y2="1.5" width="0.2" layer="21"/>
 <wire x1="-1.875" y1="1.5" x2="-0.925" y2="1.5" width="0.2" layer="21"/>
+</package>
+<package name="8UMAX">
+<smd name="1" x="0.52" y="0.3" dx="0.3" dy="0.6" layer="1"/>
+<smd name="2" x="1.17" y="0.3" dx="0.3" dy="0.6" layer="1"/>
+<smd name="3" x="1.82" y="0.3" dx="0.3" dy="0.6" layer="1"/>
+<smd name="4" x="2.47" y="0.3" dx="0.3" dy="0.6" layer="1"/>
+<smd name="8" x="0.52" y="4.6" dx="0.3" dy="0.6" layer="1"/>
+<smd name="7" x="1.17" y="4.6" dx="0.3" dy="0.6" layer="1"/>
+<smd name="6" x="1.82" y="4.6" dx="0.3" dy="0.6" layer="1"/>
+<smd name="5" x="2.47" y="4.6" dx="0.3" dy="0.6" layer="1"/>
+<wire x1="0" y1="0.95" x2="3" y2="0.95" width="0.127" layer="51"/>
+<wire x1="3" y1="0.95" x2="3" y2="3.95" width="0.127" layer="51"/>
+<wire x1="3" y1="3.95" x2="0" y2="3.95" width="0.127" layer="51"/>
+<wire x1="0" y1="3.95" x2="0" y2="0.95" width="0.127" layer="51"/>
+<circle x="0.45" y="1.4" radius="0.111803125" width="0.127" layer="21"/>
+<text x="3.2" y="2.85" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.25" y="1.05" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -257,9 +274,25 @@ https://www.power.com/sites/default/files/product-docs/tny274-280.pdf</descripti
 <pin name="VOUT" x="0" y="-2.54" length="middle" direction="pwr"/>
 <pin name="GND" x="27.94" y="0" length="middle" direction="out" rot="R180"/>
 </symbol>
+<symbol name="DS1338Z-33+">
+<wire x1="0" y1="0" x2="30.48" y2="0" width="0.254" layer="94"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="12.7" width="0.254" layer="94"/>
+<wire x1="30.48" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SDA" x="-5.08" y="2.54" length="middle" direction="out"/>
+<pin name="SCL" x="-5.08" y="10.16" length="middle" direction="out"/>
+<pin name="GND" x="15.24" y="-5.08" length="middle" direction="out" rot="R90"/>
+<pin name="VBAT" x="35.56" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="OUT" x="35.56" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="X1" x="10.16" y="17.78" length="middle" direction="out" rot="R270"/>
+<pin name="VCC" x="20.32" y="17.78" length="middle" direction="out" rot="R270"/>
+<pin name="X2" x="15.24" y="17.78" length="middle" direction="out" rot="R270"/>
+<text x="17.78" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="17.78" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="HK15F-DC12V-S-K" prefix="RELAY" uservalue="yes">
+<deviceset name="HK15F-DC12V-S-K" prefix="RELAY">
 <description>12V 30A Relay
 250V Switching Voltage
 
@@ -349,6 +382,28 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/A3213ELHLT-T.
 <attribute name="RS_PART_NUMBER" value="6807129" constant="no"/>
 <attribute name="RS_PRICE/STOCK" value="http://uk.rs-online.com/web/p/products/6807129" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS1338Z-33" prefix="IC">
+<gates>
+<gate name="G$1" symbol="DS1338Z-33+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="8UMAX">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VBAT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="X1" pad="1"/>
+<connect gate="G$1" pin="X2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
