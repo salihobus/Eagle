@@ -1,0 +1,9 @@
+Upon launching Eagle, you’ll see the Control Panel. 
+Go to File > Open > Scripts > and select eagle.scr. Add the following line to the MENU area in both the BRD and SCH sections: 
+'[bin/snapeda.png] SnapEDA : Run snapeda.ulp;'\
+
+Move both "snapeda.ulp" and "json.inc" into the "ulp" folder in the Eagle application directory. 
+
+In the bin folder, add the "snapeda.png" icon from Downloaded folder.
+
+The SnapEDA plugin is now installed. When you start a new Schematic or Board, you should be able to see the SnapEDA icon in the top menu bar.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -170,6 +170,28 @@
 <text x="3.2" y="2.85" size="1.27" layer="25">&gt;NAME</text>
 <text x="3.25" y="1.05" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="TRIM3386">
+</package>
+<package name="POT_3386F_Y">
+<pad name="1" x="-5.0546" y="-5.0546" drill="0.8128" diameter="1.3208" shape="square"/>
+<pad name="2" x="-2.5146" y="0.0254" drill="0.8128" diameter="1.3208"/>
+<pad name="3" x="0.0254" y="-5.0546" drill="0.8128" diameter="1.3208"/>
+<wire x1="-7.4168" y1="-7.4168" x2="2.3622" y2="-7.4168" width="0.1524" layer="21"/>
+<wire x1="2.3622" y1="-7.4168" x2="2.3622" y2="2.3622" width="0.1524" layer="21"/>
+<wire x1="2.3622" y1="2.3622" x2="-7.4168" y2="2.3622" width="0.1524" layer="21"/>
+<wire x1="-7.4168" y1="2.3622" x2="-7.4168" y2="-7.4168" width="0.1524" layer="21"/>
+<wire x1="-4.6228" y1="-8.5598" x2="-4.8768" y2="-8.5598" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-4.8768" y1="-8.5598" x2="-4.6228" y2="-8.5598" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-7.2898" y1="-7.2898" x2="2.2352" y2="-7.2898" width="0.1524" layer="51"/>
+<wire x1="2.2352" y1="-7.2898" x2="2.2352" y2="2.2352" width="0.1524" layer="51"/>
+<wire x1="2.2352" y1="2.2352" x2="-7.2898" y2="2.2352" width="0.1524" layer="51"/>
+<wire x1="-7.2898" y1="2.2352" x2="-7.2898" y2="-7.2898" width="0.1524" layer="51"/>
+<wire x1="-4.6228" y1="-6.7818" x2="-4.8768" y2="-6.7818" width="0" layer="51" curve="-180"/>
+<wire x1="-4.8768" y1="-6.7818" x2="-4.6228" y2="-6.7818" width="0" layer="51" curve="-180"/>
+<wire x1="-5.0038" y1="0.9652" x2="-7.0358" y2="0.9652" width="0" layer="51" curve="-180"/>
+<wire x1="-7.0358" y1="0.9652" x2="-5.0038" y2="0.9652" width="0" layer="51" curve="-180"/>
+<text x="-5.7912" y="-3.1496" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="HK15F-DC12V-S-K">
@@ -290,6 +312,48 @@ https://www.power.com/sites/default/files/product-docs/tny274-280.pdf</descripti
 <text x="17.78" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="17.78" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="POT">
+<pin name="1" x="0" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="10.16" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="3" x="20.32" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="9.525" y1="3.81" x2="10.16" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="10.795" y1="3.81" x2="10.16" y2="1.905" width="0.2032" layer="94"/>
+<wire x1="9.525" y1="3.81" x2="10.16" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="10.16" y1="3.81" x2="10.795" y2="3.81" width="0.2032" layer="94"/>
+<wire x1="10.16" y1="3.81" x2="10.16" y2="5.08" width="0.2032" layer="94"/>
+<wire x1="6.35" y1="0" x2="6.985" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="9.525" y1="1.27" x2="10.795" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="10.795" y1="-1.27" x2="12.065" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="8.255" y1="-1.27" x2="9.525" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="6.985" y1="1.27" x2="8.255" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="13.335" y1="-1.27" x2="13.97" y2="0" width="0.2032" layer="94"/>
+<wire x1="13.97" y1="0" x2="17.78" y2="0" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="0" x2="6.35" y2="0" width="0.2032" layer="94"/>
+<wire x1="12.065" y1="1.27" x2="13.335" y2="-1.27" width="0.2032" layer="94"/>
+<text x="2.8956" y="-4.9276" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+<text x="1.8288" y="-8.0772" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+</symbol>
+<symbol name="POTV">
+<pin name="1" x="0" y="0" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="3" x="0" y="-20.32" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="2" x="-7.62" y="-10.16" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="0" y1="-13.97" x2="-1.27" y2="-13.335" width="0.2032" layer="94"/>
+<wire x1="0" y1="-17.78" x2="0" y2="-13.97" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="-10.795" x2="-1.905" y2="-10.16" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="-9.525" x2="-1.905" y2="-10.16" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="-10.795" x2="-3.81" y2="-10.16" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="-10.16" x2="-3.81" y2="-9.525" width="0.2032" layer="94"/>
+<wire x1="1.27" y1="-12.065" x2="-1.27" y2="-10.795" width="0.2032" layer="94"/>
+<wire x1="-1.27" y1="-10.795" x2="1.27" y2="-9.525" width="0.2032" layer="94"/>
+<wire x1="1.27" y1="-9.525" x2="-1.27" y2="-8.255" width="0.2032" layer="94"/>
+<wire x1="-1.27" y1="-8.255" x2="1.27" y2="-6.985" width="0.2032" layer="94"/>
+<wire x1="1.27" y1="-6.985" x2="0" y2="-6.35" width="0.2032" layer="94"/>
+<wire x1="-1.27" y1="-13.335" x2="1.27" y2="-12.065" width="0.2032" layer="94"/>
+<wire x1="0" y1="-6.35" x2="0" y2="-2.54" width="0.2032" layer="94"/>
+<wire x1="-3.81" y1="-10.16" x2="-5.08" y2="-10.16" width="0.2032" layer="94"/>
+<text x="1.905" y="-10.0076" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+<text x="1.905" y="-13.1572" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="HK15F-DC12V-S-K" prefix="RELAY">
@@ -404,6 +468,26 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/A3213ELHLT-T.
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRIM3386F" prefix="R">
+<gates>
+<gate name="A" symbol="POT" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="POT_3386F_Y">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="3386F1103LF" constant="no"/>
+<attribute name="VENDOR" value="Bourns Electronics" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
