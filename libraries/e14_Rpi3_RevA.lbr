@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -109,45 +110,45 @@ For more documentation, please visit http://www.raspberrypi.org/documentation/ha
 <wire x1="58.239" y1="50.0018" x2="58.239" y2="55.0018" width="0.127" layer="21"/>
 <wire x1="50" y1="0" x2="50.5" y2="0" width="0.127" layer="51"/>
 <wire x1="56.5" y1="0" x2="57" y2="0" width="0.127" layer="51"/>
-<pad name="P$1" x="8.37" y="51.23" drill="1.016" shape="square"/>
-<pad name="P$2" x="8.3566" y="53.7718" drill="1.016"/>
+<pad name="P$1" x="83.3" y="32.18" drill="1.016" shape="square"/>
+<pad name="P$2" x="80.7466" y="37.2618" drill="1.016"/>
 <pad name="P$3" x="10.8966" y="51.2318" drill="1.016"/>
-<pad name="P$4" x="10.8966" y="53.7718" drill="1.016"/>
+<pad name="P$4" x="80.7466" y="39.8018" drill="1.016"/>
 <pad name="P$5" x="13.4366" y="51.2318" drill="1.016"/>
 <pad name="P$6" x="13.4366" y="53.7718" drill="1.016"/>
 <pad name="P$7" x="15.9766" y="51.2318" drill="1.016"/>
-<pad name="P$8" x="15.9766" y="53.7718" drill="1.016"/>
-<pad name="P$9" x="18.5166" y="51.2318" drill="1.016"/>
-<pad name="P$10" x="18.5166" y="53.7718" drill="1.016"/>
+<pad name="P$8" x="80.7466" y="42.3418" drill="1.016"/>
+<pad name="P$9" x="80.7466" y="34.7218" drill="1.016"/>
+<pad name="P$10" x="80.7466" y="44.8818" drill="1.016"/>
 <pad name="P$11" x="21.0566" y="51.2318" drill="1.016"/>
 <pad name="P$12" x="21.0566" y="53.7718" drill="1.016"/>
 <pad name="P$13" x="23.5966" y="51.2318" drill="1.016"/>
-<pad name="P$14" x="23.5966" y="53.7718" drill="1.016"/>
-<pad name="P$15" x="26.1366" y="51.2318" drill="1.016"/>
+<pad name="P$14" x="80.7466" y="27.1018" drill="1.016"/>
+<pad name="P$15" x="83.2866" y="34.7218" drill="1.016"/>
 <pad name="P$16" x="26.1366" y="53.7718" drill="1.016"/>
-<pad name="P$17" x="28.6766" y="51.2318" drill="1.016"/>
+<pad name="P$17" x="83.2866" y="37.2618" drill="1.016"/>
 <pad name="P$18" x="28.6766" y="53.7718" drill="1.016"/>
-<pad name="P$19" x="31.2166" y="51.2318" drill="1.016"/>
-<pad name="P$20" x="31.2166" y="53.7718" drill="1.016"/>
-<pad name="P$21" x="33.7566" y="51.2318" drill="1.016"/>
+<pad name="P$19" x="83.2866" y="39.8018" drill="1.016"/>
+<pad name="P$20" x="80.7466" y="24.5618" drill="1.016"/>
+<pad name="P$21" x="83.2866" y="42.3418" drill="1.016"/>
 <pad name="P$22" x="33.7566" y="53.7718" drill="1.016"/>
-<pad name="P$23" x="36.2966" y="51.2318" drill="1.016"/>
-<pad name="P$24" x="36.2966" y="53.7718" drill="1.016"/>
-<pad name="P$25" x="38.8366" y="51.2318" drill="1.016"/>
-<pad name="P$26" x="38.8366" y="53.7718" drill="1.016"/>
-<pad name="P$27" x="41.3766" y="51.2318" drill="1.016"/>
-<pad name="P$28" x="41.3766" y="53.7718" drill="1.016"/>
+<pad name="P$23" x="83.2866" y="44.8818" drill="1.016"/>
+<pad name="P$24" x="80.7466" y="47.4218" drill="1.016"/>
+<pad name="P$25" x="80.7466" y="32.1818" drill="1.016"/>
+<pad name="P$26" x="80.7466" y="49.9618" drill="1.016"/>
+<pad name="P$27" x="83.2866" y="47.4218" drill="1.016"/>
+<pad name="P$28" x="80.7466" y="52.5018" drill="1.016"/>
 <pad name="P$29" x="43.9166" y="51.2318" drill="1.016"/>
-<pad name="P$30" x="43.9166" y="53.7718" drill="1.016"/>
+<pad name="P$30" x="83.2866" y="27.1018" drill="1.016"/>
 <pad name="P$31" x="46.4566" y="51.2318" drill="1.016"/>
 <pad name="P$32" x="46.4566" y="53.7718" drill="1.016"/>
-<pad name="P$33" x="48.9966" y="51.2318" drill="1.016"/>
-<pad name="P$34" x="48.9966" y="53.7718" drill="1.016"/>
-<pad name="P$35" x="51.5366" y="51.2318" drill="1.016"/>
+<pad name="P$33" x="83.2866" y="49.9618" drill="1.016"/>
+<pad name="P$34" x="83.2866" y="29.6418" drill="1.016"/>
+<pad name="P$35" x="83.2866" y="52.5018" drill="1.016"/>
 <pad name="P$36" x="51.5366" y="53.7718" drill="1.016"/>
 <pad name="P$37" x="54.0766" y="51.2318" drill="1.016"/>
 <pad name="P$38" x="54.0766" y="53.7718" drill="1.016"/>
-<pad name="P$39" x="56.6166" y="51.2318" drill="1.016"/>
+<pad name="P$39" x="80.7466" y="29.6418" drill="1.016"/>
 <pad name="P$40" x="56.6166" y="53.7718" drill="1.016"/>
 <wire x1="84.7" y1="2.3" x2="66" y2="2.3" width="0.127" layer="21"/>
 <wire x1="66" y1="2.3" x2="66" y2="18.3" width="0.127" layer="21"/>
